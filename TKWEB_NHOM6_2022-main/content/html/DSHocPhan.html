@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="icon" href="./assets/img/logo_timetable.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="root">
+        <nav class="navbar navbar-expand-lg" style="background-color: #dbf0ff;">
+                <div class="container-fluid">
+                    <img src="../../assets/img/GHA.png" alt="GHA">
+                    <a class="navbar-brand" href="#">TRANG CHỦ</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li id="digital-clock" class="nav-link"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">DANH SÁCH LỚP HỌC PHẦN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">LỊCH HỌC</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">LỊCH THI</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ABOUT US</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </div>
+        <div class="content col-md-5" style="margin-top:20px; margin-left:50px; width:100%">
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#" style="text-decoration: none; color:#0000008C;">Trang chu</a></li>
+                    <li class="breadcrumb-item active" aria-current="page" style="color:#000000E6;">Quan ly hoc phan</li>
+                </ol>
+            </nav>
+            <div>
+                <div style="margin-bottom: 20px;">
+                   <div style="display:inline-flex; margin-bottom: 10px;">
+                    <div style="display:block; margin-right:100px;">
+                        <small>Chon lop:</small><br>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>K63</option>
+                            <option value="1">K63</option>
+                            <option value="2">K62</option>
+                            <option value="3">K61</option>
+                            <option value="4">K60</option>
+                        </select>
+                    </div>
+                    <div style="display:block; margin-right:100px;">
+                        <small>Hoc ky:</small><br>
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="1">Hoc ki 1</option>
+                            <option value="1">Hoc ki 2</option>
+                            <option value="2">Hoc ki 3</option>
+                            <option value="2">Hoc ki 4</option>
+                        </select>
+                    </div>
+                    <div style="display:block;">
+                        <small>Dot hoc:</small><br>
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="1">1</option>
+                            <option value="1">2</option>
+                            <option value="2">3</option>
+                            <option value="2">4</option>
+                        </select>
+                    </div>
+                   </div>
+                   <div>
+                    <div>
+                        <div style="display:inline-flex">
+                            <div style="display:block; margin-right:50px;">
+                                <input class="form-control" type="text" placeholder="Nhap de tim kiem" aria-label="default input example">
+                            </div>
+                            <div style="display:block;">
+                                <button type="button" class="btn btn-outline-secondary"><i class="bi bi-search"></i> Tim kiem</button>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+                <div>
+                    <table class="table table-striped">
+                        <tr>
+                            <th>TT</th>
+                            <th style="width:2cm;"></th>
+                            <th>Ma lop</th>
+                            <th>Ten lop</th>
+                            <th>Bo mon</th>
+                            <th>Khoa</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td></td>
+                            <td>IT1.109.3-1-1-22(N17)</td>
+                            <td>Cấu trúc dữ liệu và<br> giải tduật-1-1-22(N17)</td>
+                            <td>Khoa học máy tính</td>
+                            <td>Khoa Công nghệ <br>thông tin</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td> </td>
+                            <td>IT1.109.3-1-1-22(N17)</td>
+                            <td>Cấu trúc dữ liệu và<br> giải thuật-1-1-22(N17)</td>
+                            <td>Khoa học máy tính</td>
+                            <td>Khoa Công nghệ <br>thông tin</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td> </td>
+                            <td>IT1.109.3-1-1-22(N17)</td>
+                            <td>Cấu trúc dữ liệu và<br> giải tduật-1-1-22(N17)</td>
+                            <td>Khoa học máy tính</td>
+                            <td>Khoa Công nghệ <br>thông tin</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td> </td>
+                            <td>IT1.109.3-1-1-22(N17)</td>
+                            <td>Cấu trúc dữ liệu và<br> giải tduật-1-1-22(N17)</td>
+                            <td>Khoa học máy tính</td>
+                            <td>Khoa Công nghệ <br>thông tin</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td> </td>
+                            <td>IT1.109.3-1-1-22(N17)</td>
+                            <td>Cấu trúc dữ liệu và<br> giải tduật-1-1-22(N17)</td>
+                            <td>Khoa học máy tính</td>
+                            <td>Khoa Công nghệ <br>thông tin</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td> </td>
+                            <td>IT1.109.3-1-1-22(N17)</td>
+                            <td>Cấu trúc dữ liệu và<br> giải tduật-1-1-22(N17)</td>
+                            <td>Khoa học máy tính</td>
+                            <td>Khoa Công nghệ <br>thông tin</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td> </td>
+                            <td>IT1.109.3-1-1-22(N17)</td>
+                            <td>Cấu trúc dữ liệu và<br> giải tduật-1-1-22(N17)</td>
+                            <td>Khoa học máy tính</td>
+                            <td>Khoa Công nghệ <br>thông tin</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../jquery-3.2.1.min.js"></script>
+    <script src="../../main.js"> </script>
+</body>
+</html>
